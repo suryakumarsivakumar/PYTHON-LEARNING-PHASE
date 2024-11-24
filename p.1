@@ -1,0 +1,12 @@
+def factorial(num):
+    if not isinstance(num,int):
+        return None
+    elif(num==1 or num==0):
+        return 1
+    elif(num>0):
+        result=1
+        for i in range(num,1,-1):
+            result=result*i
+        return result
+    else:
+     return None
